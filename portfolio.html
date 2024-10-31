@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Company Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Portfolio Cards */
+        #portfolio-projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 3rem 1rem;
+            background-color: #f4f4f9;
+        }
+
+        .portfolio-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .video-card video {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .portfolio-card h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        .portfolio-card p {
+            font-size: 1rem;
+            padding: 0 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moments in Time Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <article>
+            <h2>Our Portfolio</h2>
+            <p>Showcase of our work.</p>
+        </article>
+    </section>
+     <!-- Portfolio Section with Project Cards -->
+     <section id="portfolio-projects">
+        <div class="portfolio-card">
+            <img src="fashion.jpg" alt="Project  1">
+            <h3>Fashion show</h3>
+            <p>Energetic,vibrant and impactful.</p>
+        </div>
+        <div class="portfolio-card video-card">
+            <video id="video" controls preload="metadata">
+                <source src="video.mp4" type="video/mp4">
+                <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+                Your browser does not support the video tag.
+            </video>
+            <h3>Video Project </h3>
+            <p>Professionally edited videos.</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="graduation.jpg" alt="Project 2">
+            <h3>Graduations</h3>
+            <p>Fun,lighthearted and imaginative.</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="babyshower.jpg" alt="Project 2">
+            <h3>Baby Shower</h3>
+            <p>celebrating and honouring a beggining of a new journey.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Moments in Time Photography(pty.ltd). All rights reserved.</p>
+    </footer>
+</body>
+</html>

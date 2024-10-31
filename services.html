@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Company Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Services Cards with Animation */
+        #services-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 3rem 1rem;
+            background-color: #f4f4f9;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            padding: 0 1rem;
+            color: #666;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moments in Time Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <article>
+            <h2>Our Services</h2>
+        </article>
+    </section>
+     <!-- Services Section with Animated Cards -->
+     <section id="services-cards">
+        <div class="service-card">
+            <img src="event.jpg" alt="Video Production">
+            <h3>Events</h3>
+            <p>High-quality content creation to engage your audience across platforms.</p>
+        </div>
+        <div class="service-card">
+            <img src="wedding.jpg" alt="Content Creation">
+            <h3>Weddings</h3>
+            <p>We capture moments from the intimate ceremony to the grand reception.</p>
+        </div>
+        <div class="service-card">
+            <img src="birthday.jpg" alt="Video Production">
+            <h3>Birthdays</h3>
+            <p>We help reflect on the years, express gratitude and look forward to the future.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Moments in Time Photography(pty.ltd). All rights reserved.</p>
+    </footer>
+</body>
+</html>
